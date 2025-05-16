@@ -1,18 +1,211 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Country Fun Fact Quiz</title>
     <link rel="stylesheet" href="assets\css\style.css">
-    <meta name="description" content="Test your knowledge of countries, their capital cities, and discover fun facts about each country with this engaging quiz.">
+    <meta name="description"
+        content="Test your knowledge of countries, their capital cities, and discover fun facts about each country with this engaging quiz.">
     <meta name="keywords" content="Quiz, countries, capital cities, fun facts">
     <meta name="author" content="Mariama Nyakateh Nyodeka">
 </head>
+
 <body>
     <h1>Welcome to the Country Fun Facts Quiz!</h1>
-    <p>Test your knowledge of countries, their capital cities, and discover fun facts about each country with this engaging quiz.</p>
+    <p>Test your knowledge of countries, their capital cities, and discover fun facts about each country.</p>
     <p>Click the button below to start the quiz!</p>
     <button id="start-quiz">Start Quiz</button>
+
+    <main>
+        <div id="quiz-container" class="hidden all-questions">
+            <h2 id="question"></h2>
+            <ul id="options"></ul>
+            <button id="next-button" class="hidden">Next Question</button>
+        </div>
+
+        <div id="result-container" class="hidden">
+            <h2>Your Score: <span id="score"></span></h2>
+            <button id="restart-quiz">Restart Quiz</button>
+        </div>
+        <!-- First question displayed before quiz starts -->
+        <div id="first-question" class="hidden">
+            <h2>What is the capital city of Sierra Leone?</h2>
+            <ul>
+                <li>A. Freetown</li>
+                <li>B. Conakry</li>
+                <li>C. Monrovia</li>
+                <li>D. Accra</li>
+            </ul>
+        </div>
+        <div id="second-question" class="hidden">
+            <h2>What city serves as the capital of Mali?</h2>
+            <ul>
+                <li>A. Bamako</li>
+                <li>B. Ouagadougou</li>
+                <li>C. Niamey</li>
+                <li>D. Dakar</li>
+        </div>
+        <div id="third-question" class="hidden">
+            <h2>Can you name the capital of Nigeria?</h2>
+            <ul>
+                <li>A. Abuja</li>
+                <li>B. Lagos</li>
+                <li>C. Kano</li>
+                <li>D. Ibadan</li>
+            </ul>
+        </div>
+        <div id="fourth-question" class="hidden">
+            <h2>Which city is India's capital?</h2>
+            <ul>
+                <li>A. New Delhi</li>
+                <li>B. Mumbai</li>
+                <li>C. Kolkata</li>
+                <li>D. Chennai</li>
+            </ul>
+        </div>
+        <div id="fifth-question" class="hidden">
+            <h2>What is Somalia's capital?</h2>
+            <ul>
+                <li>A. Mogadishu</li>
+                <li>B. Hargeisa</li>
+                <li>C. Nairobi</li>
+                <li>D. Addis Ababa</li>
+            </ul>
+        </div>
+        <div id="sixth-question" class="hidden">
+            <h2>Can you identify the capital city of Brazil?</h2>
+            <ul>
+                <li>A. Brasília</li>
+                <li>B. Rio de Janeiro</li>
+                <li>C. São Paulo</li>
+                <li>D. Salvador</li>
+            </ul>
+        </div>
+        <div id="seventh-question" class="hidden">
+            <h2>Venezuela's capital city is called?</h2>
+            <ul>
+                <li>A. Caracas</li>
+                <li>B. Maracaibo</li>
+                <li>C. Valencia</li>
+                <li>D. Barquisimeto</li>
+            </ul>
+        </div>
+        <div id="eighth-question" class="hidden">
+            <h2>What is the capital city of Colombia?</h2>
+            <ul>
+                <li>A. Bogotá</li>
+                <li>B. Medellín</li>
+                <li>C. Cali</li>
+                <li>D. Cartagena</li>
+            </ul>
+        </div>
+        <div id="ninth-question" class="hidden">
+            <h2>Russia’s capital is known as?</h2>
+            <ul>
+                <li>A. Moscow</li>
+                <li>B. Saint Petersburg</li>
+                <li>C. Novosibirsk</li>
+                <li>D. Kazan</li>
+            </ul>
+        </div>
+        <div id="tenth-question" class="hidden">
+            <h2>Can you identify the capital city of United Kingdom?</h2>
+            <ul>
+                <li>A. London</li>
+                <li>B. Manchester</li>
+                <li>C. Edinburgh</li>
+                <li>D. Birmingham</li>
+            </ul>
+        </div>
+        <div id="eleventh-question" class="hidden">
+            <h2>Which city is recognized as the capital of the United States of America?</h2>
+            <ul>
+                <li>A. Washington, D.C.</li>
+                <li>B. New York</li>
+                <li>C. Los Angeles</li>
+                <li>D. Chicago</li>
+            </ul>
+        </div>
+        <div id="twelfth-question" class="hidden">
+            <h2>France capital city is?</h2>
+            <ul>
+                <li>A. Paris</li>
+                <li>B. Marseille</li>
+                <li>C. Lyon</li>
+                <li>D. Toulouse</li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <!-- Fun Facts Section -->
+        <section id="fun-facts-section">
+            <h2>Guess the Country from the Fun Facts below! </h2>
+            <p>Click on the fun fact buttons to reveal the answers!</p>
+            <ol id="fun-facts-list">
+                <li>This country is known for its beautiful beaches on the Atlantic Ocean and is home to the Tacugama
+                    Chimpanzee Sanctuary.
+                    <span class="hidden-answer"> <strong>Sierra Leone</strong></span>
+                    <button class="reveal-btn">Reveal Answer</button>
+                </li>
+                <li>This country is famous for its mud-brick mosque in Djenné, the largest of its kind in the world, and
+                    for being the home of the legendary city of Timbuktu, a historic center of learning and trade.
+                    <span class="hidden-answer"> <strong>Mali</strong></span>
+                    <button class="reveal-btn">Reveal Answer</button>
+                </li>
+                <li>This country is Africa's most populous nation and is known for its Nollywood film industry.
+                    <span class="hidden-answer"> <strong>Nigeria</strong></span>
+                    <button class="reveal-btn">Reveal Answer</button>
+                </li>
+                <li>This country is home to the Taj Mahal, one of the New Seven Wonders of the World.
+                    <span class="hidden-answer"><strong>India</strong></span>
+                    <button class="reveal-btn">Reveal Answer</button>
+                </li>
+                <li>This country has the longest coastline on Africa's mainland and is famous for its camel population.
+                    <span class="hidden-answer"> <strong>Somalia</strong></span>
+                    <button class="reveal-btn">Reveal Answer</button>
+                </li>
+                <li>This country is known for its annual Carnival festival and the Amazon Rainforest.
+                    <span class="hidden-answer"> <strong>Brazil</strong></span>
+                    <button class="reveal-btn">Reveal Answer</button>
+                </li>
+                <li>This country has the world's largest oil reserves and is famous for Angel Falls, the highest
+                    uninterrupted waterfall.
+                    <span class="hidden-answer"> <strong>Venezuela</strong></span>
+                    <button class="reveal-btn">Reveal Answer</button>
+                </li>
+                <li>This country is known for its coffee and the legend of El Dorado.
+                    <span class="hidden-answer"> <strong>Colombia</strong></span>
+                    <button class="reveal-btn">Reveal Answer</button>
+                </li>
+                <li>This country spans Europe and Asia and is famous for the Trans-Siberian Railway.
+                    <span class="hidden-answer"> <strong>Russia</strong></span>
+                    <button class="reveal-btn">Reveal Answer</button>
+                </li>
+                <li>This country is home to Big Ben and the world’s oldest underground railway.
+                    <span class="hidden-answer"> <strong>United Kingdom</strong></span>
+                    <button class="reveal-btn">Reveal Answer</button>
+                </li>
+                <li>This country is known for the Grand Canyon and the Statue of Liberty.
+                    <span class="hidden-answer"> <strong>United States of America</strong></span>
+                    <button class="reveal-btn">Reveal Answer</button>
+                </li>
+                <li>This country is famous for the Eiffel Tower and its delicious pastries.
+                    <span class="hidden-answer"> <strong>France</strong></span>
+                    <button class="reveal-btn">Reveal Answer</button>
+            </ol>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Country Fun Facts Quiz. All rights reserved.</p>
+        <p>Created by Mariama Nyakateh Nyodeka</p>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
 </body>
+
+
 </html>
