@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Country Fun Fact Quiz</title>
+    <title>Country Quiz and Fun Facts</title>
     <link rel="stylesheet" href="assets\css\style.css">
     <meta name="description"
         content="Test your knowledge of countries, their capital cities, and discover fun facts about each country with this engaging quiz.">
@@ -13,135 +13,152 @@
 </head>
 
 <body>
-    <h1>Welcome to the Country Fun Facts Quiz!</h1>
+    <h1>Welcome to an Engaging Country Quiz and Fun Facts!</h1>
     <p>Test your knowledge of countries, their capital cities, and discover fun facts about each country.</p>
     <p>Click the button below to start the quiz!</p>
     <button id="start-quiz">Start Quiz</button>
 
     <main>
-        <div id="quiz-container" class="hidden all-questions">
+        <div id="quiz-container" class="hidden">
             <h2 id="question"></h2>
             <ul id="options"></ul>
             <button id="next-button" class="hidden">Next Question</button>
         </div>
 
         <div id="result-container" class="hidden">
-            <h2>Your Score: <span id="score"></span></h2>
+            <h2>Your Total Score: <span id="total-score"></span></h2>
             <button id="restart-quiz">Restart Quiz</button>
         </div>
         <!-- First question displayed before quiz starts -->
-        <div id="first-question" class="hidden">
+        <div id="first-question" class="question-container hidden">
             <h2>What is the capital city of Sierra Leone?</h2>
             <ul>
-                <li>A. Freetown</li>
-                <li>B. Conakry</li>
-                <li>C. Monrovia</li>
-                <li>D. Accra</li>
+                <li><input type="checkbox" class="answer-checkbox"> A. Freetown <span
+                        class="correct-answer">✔Correct!</span></li>
+                <li><input type="checkbox" class="answer-checkbox"> B. Conakry</li>
+                <li><input type="checkbox" class="answer-checkbox"> C. Monrovia</li>
+                <li><input type="checkbox" class="answer-checkbox"> D. Accra</li>
             </ul>
         </div>
-        <div id="second-question" class="hidden">
+        <!-- Second question -->
+        <div id="second-question" class="question-container hidden">
             <h2>What city serves as the capital of Mali?</h2>
             <ul>
-                <li>A. Bamako</li>
-                <li>B. Ouagadougou</li>
-                <li>C. Niamey</li>
-                <li>D. Dakar</li>
+                <li><input type="checkbox" class="answer-checkbox"> A. Bamako <span
+                        class="correct-answer">✔Correct!</span></li>
+                <li><input type="checkbox" class="answer-checkbox"> B. Ouagadougou</li>
+                <li><input type="checkbox" class="answer-checkbox"> C. Niamey</li>
+                <li><input type="checkbox" class="answer-checkbox"> D. Dakar</li>
+            </ul>
         </div>
-        <div id="third-question" class="hidden">
+
+        <!-- Third question -->
+        <div id="third-question" class="question-container hidden">
             <h2>Can you name the capital of Nigeria?</h2>
             <ul>
-                <li>A. Abuja</li>
-                <li>B. Lagos</li>
-                <li>C. Kano</li>
-                <li>D. Ibadan</li>
+                <li><input type="checkbox" class="answer-checkbox"> A. Lagos</li>
+                <li><input type="checkbox" class="answer-checkbox"> B. Kano</li>
+                <li><input type="checkbox" class="answer-checkbox"> C. Abuja <span
+                        class="correct-answer">✔Correct!</span></li>
+                <li><input type="checkbox" class="answer-checkbox"> D. Ibadan</li>
             </ul>
         </div>
-        <div id="fourth-question" class="hidden">
+
+        <div id="fourth-question" class="question-container hidden">
             <h2>Which city is India's capital?</h2>
             <ul>
-                <li>A. New Delhi</li>
-                <li>B. Mumbai</li>
-                <li>C. Kolkata</li>
-                <li>D. Chennai</li>
+                <li><input type="checkbox" class="answer-checkbox">A. Mumbai</li>
+                <li><input type="checkbox" class="answer-checkbox">B. New Delhi <span
+                        class="correct-answer">✔Correct!</span></li>
+                <li><input type="checkbox" class="answer-checkbox">C. Kolkata</li>
+                <li><input type="checkbox" class="answer-checkbox">D. Chennai</li>
             </ul>
         </div>
-        <div id="fifth-question" class="hidden">
+        <div id="fifth-question" class="question-container hidden">
             <h2>What is Somalia's capital?</h2>
             <ul>
-                <li>A. Mogadishu</li>
-                <li>B. Hargeisa</li>
-                <li>C. Nairobi</li>
-                <li>D. Addis Ababa</li>
+                <li><input type="checkbox" class="answer-checkbox">A. Hargeisa</li>
+                <li><input type="checkbox" class="answer-checkbox">B. Nairobi</li>
+                <li><input type="checkbox" class="answer-checkbox">C. Mogadishu <span
+                        class="correct-answer">✔Correct!</span></li>
+                <li><input type="checkbox" class="answer-checkbox">D. Addis Ababa</li>
             </ul>
         </div>
-        <div id="sixth-question" class="hidden">
+        <div id="sixth-question" class="question-container hidden">
             <h2>Can you identify the capital city of Brazil?</h2>
             <ul>
-                <li>A. Brasília</li>
-                <li>B. Rio de Janeiro</li>
-                <li>C. São Paulo</li>
-                <li>D. Salvador</li>
+                <li><input type="checkbox" class="answer-checkbox">A. Rio de Janeiro</li>
+                <li><input type="checkbox" class="answer-checkbox">B. Brasília <span
+                        class="correct-answer">✔Correct!</span></li>
+                <li><input type="checkbox" class="answer-checkbox">C. São Paulo</li>
+                <li><input type="checkbox" class="answer-checkbox">D. Salvador</li>
             </ul>
         </div>
-        <div id="seventh-question" class="hidden">
+        <div id="seventh-question" class="question-container hidden">
             <h2>Venezuela's capital city is called?</h2>
             <ul>
-                <li>A. Caracas</li>
-                <li>B. Maracaibo</li>
-                <li>C. Valencia</li>
-                <li>D. Barquisimeto</li>
+                <li><input type="checkbox" class="answer-checkbox">A. Maracaibo</li>
+                <li><input type="checkbox" class="answer-checkbox">B. Valencia</li>
+                <li><input type="checkbox" class="answer-checkbox">C. Caracas <span
+                        class="correct-answer">✔Correct!</span></li>
+                <li><input type="checkbox" class="answer-checkbox">D. Barquisimeto</li>
             </ul>
         </div>
-        <div id="eighth-question" class="hidden">
+        <div id="eighth-question" class="question-container hidden">
             <h2>What is the capital city of Colombia?</h2>
             <ul>
-                <li>A. Bogotá</li>
-                <li>B. Medellín</li>
-                <li>C. Cali</li>
-                <li>D. Cartagena</li>
+                <li><input type="checkbox" class="answer-checkbox">A. Medellín</li>
+                <li><input type="checkbox" class="answer-checkbox">B. Cali</li>
+                <li><input type="checkbox" class="answer-checkbox">C. Cartagena</li>
+                <li><input type="checkbox" class="answer-checkbox">D. Bogotá <span
+                        class="correct-answer">✔Correct!</span></li>
             </ul>
         </div>
-        <div id="ninth-question" class="hidden">
+        <div id="ninth-question" class="question-container hidden">
             <h2>Russia’s capital is known as?</h2>
             <ul>
-                <li>A. Moscow</li>
-                <li>B. Saint Petersburg</li>
-                <li>C. Novosibirsk</li>
-                <li>D. Kazan</li>
+                <li><input type="checkbox" class="answer-checkbox">A. Saint Petersburg</li>
+                <li><input type="checkbox" class="answer-checkbox">B. Moscow <span
+                        class="correct-answer">✔Correct!</span></li>
+                <li><input type="checkbox" class="answer-checkbox">C. Novosibirsk</li>
+                <li><input type="checkbox" class="answer-checkbox">D. Kazan</li>
             </ul>
         </div>
-        <div id="tenth-question" class="hidden">
+        <div id="tenth-question" class="question-container hidden">
             <h2>Can you identify the capital city of United Kingdom?</h2>
             <ul>
-                <li>A. London</li>
-                <li>B. Manchester</li>
-                <li>C. Edinburgh</li>
-                <li>D. Birmingham</li>
+                <li><input type="checkbox" class="answer-checkbox">A. Manchester</li>
+                <li><input type="checkbox" class="answer-checkbox">B. London <span
+                        class="correct-answer">✔Correct!</span></li>
+                <li><input type="checkbox" class="answer-checkbox">C. Edinburgh</li>
+                <li><input type="checkbox" class="answer-checkbox">D. Birmingham</li>
             </ul>
         </div>
-        <div id="eleventh-question" class="hidden">
+        <div id="eleventh-question" class="question-container hidden">
             <h2>Which city is recognized as the capital of the United States of America?</h2>
             <ul>
-                <li>A. Washington, D.C.</li>
-                <li>B. New York</li>
-                <li>C. Los Angeles</li>
-                <li>D. Chicago</li>
+                <li><input type="checkbox" class="answer-checkbox">A. New York</li>
+                <li><input type="checkbox" class="answer-checkbox">B. Los Angeles</li>
+                <li><input type="checkbox" class="answer-checkbox">C. Chicago</li>
+                <li><input type="checkbox" class="answer-checkbox">D. Washington, D.C. <span
+                        class="correct-answer">✔Correct!</span></li>
             </ul>
         </div>
-        <div id="twelfth-question" class="hidden">
+        <div id="twelfth-question" class="question-container hidden">
             <h2>France capital city is?</h2>
             <ul>
-                <li>A. Paris</li>
-                <li>B. Marseille</li>
-                <li>C. Lyon</li>
-                <li>D. Toulouse</li>
+                <li><input type="checkbox" class="answer-checkbox">A. Paris<span class="correct-answer">✔Correct!</span>
+                </li>
+                <li><input type="checkbox" class="answer-checkbox">B. Marseille</li>
+                <li><input type="checkbox" class="answer-checkbox">C. Lyon</li>
+                <li><input type="checkbox" class="answer-checkbox">D. Toulouse</li>
             </ul>
         </div>
 
         <hr>
 
         <!-- Fun Facts Section -->
-        <section id="fun-facts-section">
+        <section id="fun-facts-section" class="hidden">
             <h2>Guess the Country from the Fun Facts below! </h2>
             <p>Click on the fun fact buttons to reveal the answers!</p>
             <ol id="fun-facts-list">
