@@ -42,6 +42,12 @@ button {
   border-radius: 10px;
 }
 
+/* Toggle button */
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+
 /* Country capital city qyestions */
 h1 {
   font-family: 'Gabriela', serif;
@@ -78,6 +84,19 @@ p {
     display: none; /* Hide until checkbox is clicked */
 }
 
+.answer-container {
+    display: flex;
+    align-items: center; /* Ensures items align neatly */
+    justify-content: space-between; /* Space checkboxes and flags apart */
+    gap: 10px; /* Adds some spacing between checkbox and flag */
+}
+
+.flag-image {
+    width: 40px; /* Adjust size of flag as needed */
+    height: auto;
+}
+
+
 /* Fun facts section */
 .hidden-answer {
     display: block; /* Ensure it's hidden initially */
@@ -108,4 +127,5 @@ footer {
   text-align: center;
   font-size: 0.5rem;
   color: #666;
+  background-color: green;
 }

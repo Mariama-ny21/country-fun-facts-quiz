@@ -1,68 +1,88 @@
+// Function to toggle dark mode
+function myToggle() {
+   var element = document.body;
+   element.classList.toggle("dark-mode");
+}
+
 document.addEventListener("DOMContentLoaded", function () {
   const questions = document.querySelectorAll(".question-container");
   let currentQuestionIndex = 0;
+  let correctAnswers = 0;
+  let incorrectAnswers = 0;
 
   // Ensure only the first question is visible at the start
   questions.forEach((q, index) => {
-    q.style.display = index === 0 ? "block" : "none"; // Hide all except the first
+    q.style.display = index === 0 ? "block" : "none"; 
+  });
+  // Ensure the end message is hidden at the start
+  function checkAnswer() {
+    const currentQuestion = document.querySelector(".question-container:not([style='display: none;'])"); 
+    const checked = currentQuestion.querySelector(".answer-checkbox:checked");
+    const correctAnswerElem = currentQuestion.querySelector(".correct-answer"); // Keep this if displaying the correct answer
+
+    if (!checked) return;
+
+    const isCorrect = checked.hasAttribute("data-correct") && checked.getAttribute("data-correct") === "true";
+    
+    if (isCorrect) {
+        correctAnswers++;
+    } else {
+        incorrectAnswers++;
+        if (correctAnswerElem) {
+            correctAnswerElem.style.display = "inline"; // Show the correct answer when the user gets it wrong
+        }
+    }
+
+    document.getElementById("correct-score").textContent = correctAnswers;
+    document.getElementById("incorrect-score").textContent = incorrectAnswers;
+    document.getElementById("total-score").textContent = correctAnswers;
+
+    setTimeout(showNextQuestion, 1000);
+}
+
+function showNextQuestion() {
+    if (currentQuestionIndex < questions.length - 1) {
+        questions[currentQuestionIndex].style.display = "none"; 
+        currentQuestionIndex++; 
+        questions[currentQuestionIndex].style.display = "block"; 
+    } else {
+        document.getElementById("end-message").style.display = "block"; // Show final message only at the end
+    }
+}
+
+  // Ensure buttons function correctly
+  document.getElementById("start-quiz").addEventListener("click", function () {
+    document.getElementById("quiz-container").style.display = "block"; 
+    this.style.display = "none"; 
   });
 
-  // Function to show the next question
-  function showNextQuestion() {
-    if (currentQuestionIndex < questions.length - 1) {
-      questions[currentQuestionIndex].style.display = "none"; // Hide current question
-      currentQuestionIndex++; // Move to next question
-      questions[currentQuestionIndex].style.display = "block"; // Show next question
-    } else {
-      alert("Quiz completed!");
-    }
-  }
-
-  // Attach event listener to the "Next Question" button
   document.getElementById("next-button").addEventListener("click", showNextQuestion);
 
-  // Start Quiz Button
-  document.getElementById("start-quiz").addEventListener("click", function () {
-    document.getElementById("quiz-container").style.display = "block"; // Show quiz
-    this.style.display = "none"; // Hide start button
-  });
-
-  // Restart Quiz Button
   document.getElementById("restart-quiz").addEventListener("click", function () {
-    currentQuestionIndex = 0; // Reset index
+    currentQuestionIndex = 0; 
+    correctAnswers = 0;
+    incorrectAnswers = 0;
+
     questions.forEach((q, index) => {
-      q.style.display = index === 0 ? "block" : "none"; // Show first question
+      q.style.display = index === 0 ? "block" : "none"; 
     });
-    document.getElementById("quiz-container").style.display = "block"; // Show quiz again
+
+    document.getElementById("correct-score").textContent = "0";
+    document.getElementById("incorrect-score").textContent = "0";
+    document.getElementById("total-score").textContent = "0";
+
+    document.getElementById("end-message").style.display = "none";
   });
 
-  // Correct Answers in Country / City section
- 
+  // Ensure only one checkbox is selected per question & auto-submit answer
   document.querySelectorAll(".answer-checkbox").forEach(checkbox => {
     checkbox.addEventListener("change", function () {
-        const correctAnswer = this.parentElement.querySelector(".correct-answer"); // Find correct answer inside the <li>
-        if (this.checked && correctAnswer) {
-            correctAnswer.style.display = "inline"; // Show correct answer
-            correctAnswer.style.fontSize = "18px"; // Make it stand out
-        }
-    });
-});
+      const parent = this.closest(".question-container"); 
+      parent.querySelectorAll(".answer-checkbox").forEach(cb => {
+        if (cb !== this) cb.checked = false; 
+      });
 
-  // Reveal Answer Buttons in Fun Facts section
-  document.querySelectorAll(".reveal-btn").forEach(button => {
-    button.addEventListener("click", () => {
-      const answer = button.previousElementSibling;
-      answer.style.opacity = "1"; // Fade-in effect applied via CSS
-      button.style.display = "none"; // Hide the button after revealing
+      setTimeout(checkAnswer, 100);
     });
-  });
-
-  // Reveal Answer Buttons in Fun Facts section (Event Delegation)
-  document.addEventListener("click", function (event) {
-    if (event.target.classList.contains("reveal-btn")) {
-      const answer = event.target.previousElementSibling;
-      answer.style.display = "inline"; // Show the answer
-      event.target.style.display = "none"; // Hide the button
-    }
   });
 });
