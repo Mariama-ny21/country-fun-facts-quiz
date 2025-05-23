@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Gabriela&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 /* CSS Reset */
 * {
@@ -12,34 +12,48 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  font-family: 'Noto Sans', sans-serif;
-  background-color: skyblue;
-  color: #333;
+  font-family: "Poppins", sans-serif;
+  background-color: white;
+  color: black;
   margin-left: 3rem;
   margin-right: 3rem;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding: 25px;
+  font-size: 25px;
 }
-h1, h2, h3 {
-  font-family: 'Gabriela', serif;
-  color: #333;
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  font-family: "Poppins", sans-serif;
+}
+h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+h3 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
 }
 p {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   line-height: 1.5;
 }
 button {
-  background-color: green;
+  background-color: #0077b6;
   border: none;
   color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: none;
   cursor: pointer;
-  border-radius: 10px;
+  font-size: 1.3rem;
+  margin: 4px 2px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #0096c7;
 }
 
 /* Toggle button */
@@ -48,77 +62,97 @@ button {
   color: white;
 }
 
-/* Country capital city qyestions */
-h1 {
-  font-family: 'Gabriela', serif;
-  font-size: 2rem;
-  margin-bottom: 20px;
+.light-mode {
+  background-color: white;
+  color: black;
 }
-p {
-  font-size: 1.3rem;
+
+/* Results */
+#result-container {
+  border: 2px solid skyblue;
+  padding: 20px;
+  margin-top: 20px;
+  width:fit-content;
+} 
+
+
+/* Modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    margin: 15% auto;
+    width: 60%;
+    text-align: center;
+    border-radius: 8px;
+}
+ul li{
+  list-style-type: none;
+}
+.close {
+    float: right;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Country capital city questions */
+h2 {
   margin-bottom: 20px;
 }
 
 .hidden ul li {
   list-style-type: none;
-  font-size: larger;
+  font-size: 1.3rem;
 }
 .question-container {
-    display: none; /* Hide all questions initially */
+  display: none; /* Hide all questions initially */
 }
 
 #first-question {
-    display: block; /* Keep only the first question visible */
-}
-
-/* Currect answer */
-.correct-answer {
-    font-weight: bold;
-    color: green;
-    display: none; /* Hide until checkbox is clicked */
-}
-/* Incorrect answer */
-.incorrect-answer {
-    font-weight: bold;
-    color: red;
-    display: none; /* Hide until checkbox is clicked */
+  display: block; /* Keep only the first question visible */
 }
 
 .answer-container {
-    display: flex;
-    align-items: center; /* Ensures items align neatly */
-    justify-content: space-between; /* Space checkboxes and flags apart */
-    gap: 10px; /* Adds some spacing between checkbox and flag */
+  display: flex;
+  align-items: center; /* Ensures items align neatly */
+  justify-content: space-between; /* Space checkboxes and flags apart */
+  gap: 10px; /* Adds some spacing between checkbox and flag */
 }
 
 .flag-image {
-    width: 40px; /* Adjust size of flag as needed */
-    height: auto;
+  width: 40px; /* Adjust size of flag as needed */
+  height: auto;
 }
-
 
 /* Fun facts section */
 .hidden-answer {
-    display: block; /* Ensure it's hidden initially */
-    opacity: 0;
-    transition: opacity 0.5s ease-in-out;
+  display: block; /* Ensure it's hidden initially */
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
 }
-#fun-facts-section{
-  font-size: 1.1rem; /* Increases font size */
+#fun-facts-section {
+  font-size: 1.6rem; /* Increases font size */
   margin-top: 20px; /* Adds space above the fun facts section */
 }
 #fun-facts-section li {
-    margin-bottom: 10px; /* Adds space between list items */
-    font-size: 1.3rem; /* Increases font size */
-    line-height: 1.2; /* Increases line height for better readability */
+  margin-bottom: 10px; /* Adds space between list items */
+  font-size: 1.5rem; /* Increases font size */
+  line-height: 1.2; /* Increases line height for better readability */
 }
 
-
 ol li {
-    margin-bottom: 10px; /* Adds space between list items */
-    font-size: 1rem; /* Increases font size */
-    line-height: 1.5; /* Increases line height for better readability */
-
+  margin-bottom: 10px; /* Adds space between list items */
+  font-size: 1rem; /* Increases font size */
+  line-height: 1.5; /* Increases line height for better readability */
 }
 
 /* Footer */
@@ -126,6 +160,10 @@ footer {
   margin-top: 20px;
   text-align: center;
   font-size: 0.5rem;
-  color: #666;
-  background-color: green;
+  color: white;
+  background-color: #0077b6;
+  width: 100%;
+  padding-top: 30px;
+  margin-left: 0px;
+  margin-right: 0px;
 }
