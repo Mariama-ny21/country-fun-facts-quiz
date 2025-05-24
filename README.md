@@ -5,6 +5,7 @@
 1. Introduction
 2. Project Overview
 3. UX/UI Design
+   - User Stories
    - Colours
    - Font
    - Imagery
@@ -19,7 +20,7 @@
 
 ## Introduction
 
-Welcome to my **Country Quiz and Fun Facts,** an interactive quiz designed to test your knowledge of countries, their capital cities, and unique cultural facts. This quiz offers an engaging way to learn about different nations while having fun! The website for the quiz is located at https://.........
+Welcome to my **Country Quiz and Fun Facts,** an interactive quiz designed to test your knowledge of countries, their capital cities, and unique cultural facts. This quiz offers an engaging way to learn about different nations while having fun and a screenshot of the Quiz can be seen below. ![country-quiz-fun-facts-page-screenshot](https://github.com/user-attachments/assets/b80e5a64-a164-405d-90ec-b5361327f61e) Play the quiz here https://.........
 
 ## Project Overview
 
@@ -31,6 +32,14 @@ Key Objectives:
 - Deploy the project using Git and GitHub Pages
 
 ## UX / UI Design
+
+### User Stories
+As a user, I want to...
+- Answer multiple-choice questions about country capitals so that I can test my knowledge
+- See all the correct answers at the end of the quiz so that I can learn from my mistakes
+- Reveal fun facts about each country after the quiz so that I can learn interesting information
+- Toggle between dark and light mode so that I can choose my preferred viewing experience
+- Restart the quiz at any time so that I can try again and improve my score
 
 ### Colours
 | **Colours** | **Hex Code**  | **Usage** |
