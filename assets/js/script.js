@@ -42,17 +42,36 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     function showNextQuestion() {
-        if (currentQuestionIndex < questions.length - 1) {
-            questions[currentQuestionIndex].style.display = "none";
-            currentQuestionIndex++;
-            questions[currentQuestionIndex].style.display = "block";
-        } else {
-            document.getElementById("end-message").style.display = "block";
-            showAnswersBtn.style.display = "block"; // Reveal modal button at quiz end
-        }
+    if (currentQuestionIndex < questions.length - 1) {
+        questions[currentQuestionIndex].style.display = "none";
+        currentQuestionIndex++;
+        questions[currentQuestionIndex].style.display = "block";
+    } else {
+        document.getElementById("end-message").style.display = "block";
+        showAnswersBtn.style.display = "block"; // Reveal modal button at quiz end
+        
+        // 🎉 Trigger confetti animation when quiz ends
+        showCongratulations();
     }
+}
+// Show congratulations message with confetti
+const jsConfetti = new JSConfetti();
 
-    document.getElementById("next-button").addEventListener("click", showNextQuestion);
+function showCongratulations() {
+    document.getElementById("end-message").style.display = "block";
+    
+    // Trigger confetti animation
+    jsConfetti.addConfetti({
+        confettiColors: ['#0077b6', '#ff477e', '#ff7096', '#ff85a1', '#fbb1bd'],
+        confettiRadius: 6,
+        confettiNumber: 300
+    });
+}
+
+// Attach event listener to next button
+document.getElementById("next-button").addEventListener("click", showNextQuestion);
+
+
 
     // Restart Quiz
     document.getElementById("restart-quiz").addEventListener("click", function () {

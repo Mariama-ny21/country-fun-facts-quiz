@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Country Quiz and Fun Facts</title>
-    <link rel="stylesheet" href="assets\css\style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
     <meta name="description"
         content="Test your knowledge of countries, their capital cities, and discover fun facts about each country with this engaging quiz.">
     <meta name="keywords" content="Quiz, countries, capital cities, fun facts">
@@ -16,12 +16,11 @@
     <h1 id="quiz-title">Country Quiz and Fun Facts!</h1>
     <h2>Toggle Dark/Light Mode</h2>
     <p>Click the button below to toggle between dark and light mode.</p>
-    <button onclick="myToggle()">Toggle dark mode</button>
+    <button onclick="myToggle()">Toggle Dark Mode</button>
     <p>Test your knowledge of countries, their capital cities, and discover fun facts about each country.</p>
-    <p>Click the button below to start the quiz!</p>
     <main>
         <div id="quiz-container" class="hidden">
-            <h2 id="question"></h2>
+            <h3 id="question">Click the button below to start the quiz!</h3>
             <ul id="options"></ul>
             <button id="start-quiz">Start Quiz</button>
             <button id="next-button" class="hidden">Next Question</button>
@@ -41,26 +40,26 @@
                 <img src="assets/images/sierra-leone-flag.webp" alt="Sierra Leone Flag" class="flag-icon">
             </div>
             <ul>
-                <li><input type="checkbox" class="answer-checkbox" value="Freetown" data-correct="true"> A. Freetown
+                <li><input type="checkbox" class="answer-checkbox" name="Freetown" data-correct="true"> A. Freetown
                 </li>
-                <li><input type="checkbox" class="answer-checkbox" value="Conakry" data-correct="false"> B. Conakry</li>
-                <li><input type="checkbox" class="answer-checkbox" value="Monrovia" data-correct="false"> C. Monrovia
+                <li><input type="checkbox" class="answer-checkbox" name="Conakry" data-correct="false"> B. Conakry</li>
+                <li><input type="checkbox" class="answer-checkbox" name="Monrovia" data-correct="false"> C. Monrovia
                 </li>
-                <li><input type="checkbox" class="answer-checkbox" value="Accra" data-correct="false"> D. Accra</li>
+                <li><input type="checkbox" class="answer-checkbox" name="Accra" data-correct="false"> D. Accra</li>
             </ul>
         </div>
         <!-- Second question -->
         <div id="second-question" class="question-container hidden">
             <div class="question-header">
                 <h3>What city serves as the capital of Mali?</h3>
-                <img src="assets\images\mali-flag.webp" alt="Mali Flag" class="flag-icon">
+                <img src="assets/images/mali-flag.webp" alt="Mali Flag" class="flag-icon">
             </div>
             <ul>
-                <li><input type="checkbox" class="answer-checkbox" value="Bamako" data-correct="true"> A. Bamako</li>
-                <li><input type="checkbox" class="answer-checkbox" value="Ouagadougou" data-correct="false"> B.
+                <li><input type="checkbox" class="answer-checkbox" name="Bamako" data-correct="true"> A. Bamako</li>
+                <li><input type="checkbox" class="answer-checkbox" name="Ouagadougou" data-correct="false"> B.
                     Ouagadougou</li>
-                <li><input type="checkbox" class="answer-checkbox" value="Niamey" data-correct="false"> C. Niamey</li>
-                <li><input type="checkbox" class="answer-checkbox" value="Dakar" data-correct="false"> D. Dakar</li>
+                <li><input type="checkbox" class="answer-checkbox" name="Niamey" data-correct="false"> C. Niamey</li>
+                <li><input type="checkbox" class="answer-checkbox" name="Dakar" data-correct="false"> D. Dakar</li>
             </ul>
         </div>
 
@@ -68,151 +67,151 @@
         <div id="third-question" class="question-container hidden">
             <div class="question-header">
                 <h3>Can you name the capital of Nigeria?</h3>
-                <img src="assets\images\nigeria-flag.webp" alt="Nigeria Flag" class="flag-icon">
+                <img src="assets/images/nigeria-flag.webp" alt="Nigeria Flag" class="flag-icon">
             </div>
             <ul>
-                <li><input type="checkbox" class="answer-checkbox" value="Lagos" data-correct="false"> A. Lagos</li>
-                <li><input type="checkbox" class="answer-checkbox" value="Kanu" data-correct="false"> B. Kano</li>
-                <li><input type="checkbox" class="answer-checkbox" value="Abuja" data-correct="true"> C. Abuja</li>
-                <li><input type="checkbox" class="answer-checkbox" value="Ibadan" data-correct="false"> D. Ibadan</li>
+                <li><input type="checkbox" class="answer-checkbox" name="Lagos" data-correct="false"> A. Lagos</li>
+                <li><input type="checkbox" class="answer-checkbox" name="Kanu" data-correct="false"> B. Kano</li>
+                <li><input type="checkbox" class="answer-checkbox" name="Abuja" data-correct="true"> C. Abuja</li>
+                <li><input type="checkbox" class="answer-checkbox" name="Ibadan" data-correct="false"> D. Ibadan</li>
             </ul>
         </div>
 
         <div id="fourth-question" class="question-container hidden">
             <div class="question-header">
                 <h3>Which city is India's capital?</h3>
-                <img src="assets\images\india-flag.webp" alt="India Flag" class="flag-icon">
+                <img src="assets/images/india-flag.webp" alt="India Flag" class="flag-icon">
             </div>
             <ul>
-                <li><input type="checkbox" class="answer-checkbox" value="Mumbai" data-correct="false">A. Mumbai</li>
-                <li><input type="checkbox" class="answer-checkbox" value="New Delhi" data-correct="true">B. New Delhi
+                <li><input type="checkbox" class="answer-checkbox" name="Mumbai" data-correct="false">A. Mumbai</li>
+                <li><input type="checkbox" class="answer-checkbox" name="New Delhi" data-correct="true">B. New Delhi
                 </li>
-                <li><input type="checkbox" class="answer-checkbox" value="Kolkata" data-correct="false">C. Kolkata</li>
-                <li><input type="checkbox" class="answer-checkbox" value="Chennai" data-correct="false">D. Chennai</li>
+                <li><input type="checkbox" class="answer-checkbox" name="Kolkata" data-correct="false">C. Kolkata</li>
+                <li><input type="checkbox" class="answer-checkbox" name="Chennai" data-correct="false">D. Chennai</li>
             </ul>
         </div>
         <div id="fifth-question" class="question-container hidden">
             <div class="question-header">
                 <h3>What is Somalia's capital?</h3>
-                <img src="assets\images\somalia-flag.webp" alt="Somalia Flag" class="flag-icon">
+                <img src="assets/images/somalia-flag.webp" alt="Somalia Flag" class="flag-icon">
             </div>
             <ul>
-                <li><input type="checkbox" class="answer-checkbox" value="Hargeisa" data-correct="false">A. Hargeisa
+                <li><input type="checkbox" class="answer-checkbox" name="Hargeisa" data-correct="false">A. Hargeisa
                 </li>
-                <li><input type="checkbox" class="answer-checkbox" value="Nairobi" data-correct="false">B. Nairobi</li>
-                <li><input type="checkbox" class="answer-checkbox" value="Mogadishu" data-correct="true">C. Mogadishu
+                <li><input type="checkbox" class="answer-checkbox" name="Nairobi" data-correct="false">B. Nairobi</li>
+                <li><input type="checkbox" class="answer-checkbox" name="Mogadishu" data-correct="true">C. Mogadishu
                 </li>
-                <li><input type="checkbox" class="answer-checkbox" value="Addis Ababa" data-correct="false">D. Addis
+                <li><input type="checkbox" class="answer-checkbox" name="Addis Ababa" data-correct="false">D. Addis
                     Ababa</li>
             </ul>
         </div>
         <div id="sixth-question" class="question-container hidden">
             <div class="question-header">
                 <h3>Can you identify the capital city of Brazil?</h3>
-                <img src="assets\images\brazil-flag.webp" alt="Brazil Flag" class="flag-icon">
+                <img src="assets/images/brazil-flag.webp" alt="Brazil Flag" class="flag-icon">
             </div>
             <ul>
-                <li><input type="checkbox" class="answer-checkbox" value="Rio de Janeiro" data-correct="false">A. Rio de
+                <li><input type="checkbox" class="answer-checkbox" name="Rio de Janeiro" data-correct="false">A. Rio de
                     Janeiro</li>
-                <li><input type="checkbox" class="answer-checkbox" value="Brasília" data-correct="true">B. Brasília</li>
-                <li><input type="checkbox" class="answer-checkbox" value="São Paulo" data-correct="false">C. São Paulo
+                <li><input type="checkbox" class="answer-checkbox" name="Brasília" data-correct="true">B. Brasília</li>
+                <li><input type="checkbox" class="answer-checkbox" name="São Paulo" data-correct="false">C. São Paulo
                 </li>
-                <li><input type="checkbox" class="answer-checkbox" value="Salvador" data-correct="false">D. Salvador
+                <li><input type="checkbox" class="answer-checkbox" name="Salvador" data-correct="false">D. Salvador
                 </li>
             </ul>
         </div>
         <div id="seventh-question" class="question-container hidden">
             <div class="question-header">
                 <h3>Venezuela's capital city is called?</h3>
-                <img src="assets\images\venezuela-flag.webp" alt="Venezuela Flag" class="flag-icon">
+                <img src="assets/images/venezuela-flag.webp" alt="Venezuela Flag" class="flag-icon">
             </div>
             <ul>
-                <li><input type="checkbox" class="answer-checkbox" value="Maracaibo" data-correct="false">A. Maracaibo
+                <li><input type="checkbox" class="answer-checkbox" name="Maracaibo" data-correct="false">A. Maracaibo
                 </li>
-                <li><input type="checkbox" class="answer-checkbox" value="Valencia" data-correct="false">B. Valencia
+                <li><input type="checkbox" class="answer-checkbox" name="Valencia" data-correct="false">B. Valencia
                 </li>
-                <li><input type="checkbox" class="answer-checkbox" value="Caracas" data-correct="true">C. Caracas</li>
-                <li><input type="checkbox" class="answer-checkbox" value="Barquisimeto" data-correct="false">D.
+                <li><input type="checkbox" class="answer-checkbox" name="Caracas" data-correct="true">C. Caracas</li>
+                <li><input type="checkbox" class="answer-checkbox" name="Barquisimeto" data-correct="false">D.
                     Barquisimeto</li>
             </ul>
         </div>
         <div id="eighth-question" class="question-container hidden">
-            <div question-header>
+            <div class="question-header">
                 <h3>What is the capital city of Colombia?</h3>
-                <img src="assets\images\colombia-flag.webp" alt="Colombia Flag" class="flag-icon">
+                <img src="assets/images/colombia-flag.webp" alt="Colombia Flag" class="flag-icon">
             </div>
             <ul>
-                <li><input type="checkbox" class="answer-checkbox" value="Medellín" data-correct="false">A. Medellín
+                <li><input type="checkbox" class="answer-checkbox" name="Medellín" data-correct="false">A. Medellín
                 </li>
-                <li><input type="checkbox" class="answer-checkbox" value="Cali" data-correct="false">B. Cali</li>
-                <li><input type="checkbox" class="answer-checkbox" value="Cartagena" data-correct="false">C. Cartagena
+                <li><input type="checkbox" class="answer-checkbox" name="Cali" data-correct="false">B. Cali</li>
+                <li><input type="checkbox" class="answer-checkbox" name="Cartagena" data-correct="false">C. Cartagena
                 </li>
-                <li><input type="checkbox" class="answer-checkbox" value="Bogotá" data-correct="true">D. Bogotá</li>
+                <li><input type="checkbox" class="answer-checkbox" name="Bogotá" data-correct="true">D. Bogotá</li>
             </ul>
         </div>
         <div id="ninth-question" class="question-container hidden">
             <h3>Russia’s capital is known as?</h3>
             <div class="question-header">
-                <img src="assets\images\russia-flag.webp" alt="Russia Flag" class="flag-icon">
+                <img src="assets/images/russia-flag.webp" alt="Russia Flag" class="flag-icon">
             </div>
             <ul>
-                <li><input type="checkbox" class="answer-checkbox" value="Saint Petersburg" data-correct="false">A.
+                <li><input type="checkbox" class="answer-checkbox" name="Saint Petersburg" data-correct="false">A.
                     Saint Petersburg</li>
-                <li><input type="checkbox" class="answer-checkbox" value="Moscow" data-correct="true">B. Moscow</li>
-                <li><input type="checkbox" class="answer-checkbox" value="Novosibirsk" data-correct="false">C.
+                <li><input type="checkbox" class="answer-checkbox" name="Moscow" data-correct="true">B. Moscow</li>
+                <li><input type="checkbox" class="answer-checkbox" name="Novosibirsk" data-correct="false">C.
                     Novosibirsk</li>
-                <li><input type="checkbox" class="answer-checkbox" value="Kazan" data-correct="false">D. Kazan</li>
+                <li><input type="checkbox" class="answer-checkbox" name="Kazan" data-correct="false">D. Kazan</li>
             </ul>
         </div>
         <div id="tenth-question" class="question-container hidden">
             <h3>Can you identify the capital city of United Kingdom?</h3>
             <div class="question-header">
-                <img src="assets\images\united-kingdom-flag.webp" alt="United Kingdom Flag" class="flag-icon">
+                <img src="assets/images/united-kingdom-flag.webp" alt="United Kingdom Flag" class="flag-icon">
             </div>
             <ul>
-                <li><input type="checkbox" class="answer-checkbox" value="Manchester" data-correct="false">A. Manchester
+                <li><input type="checkbox" class="answer-checkbox" name="Manchester" data-correct="false">A. Manchester
                 </li>
-                <li><input type="checkbox" class="answer-checkbox" value="London" data-correct="true">B. London</li>
-                <li><input type="checkbox" class="answer-checkbox" value="Edinburgh" data-correct="false">C. Edinburgh
+                <li><input type="checkbox" class="answer-checkbox" name="London" data-correct="true">B. London</li>
+                <li><input type="checkbox" class="answer-checkbox" name="Edinburgh" data-correct="false">C. Edinburgh
                 </li>
-                <li><input type="checkbox" class="answer-checkbox" value="Birmingham" data-correct="false">D. Birmingham
+                <li><input type="checkbox" class="answer-checkbox" name="Birmingham" data-correct="false">D. Birmingham
                 </li>
             </ul>
         </div>
         <div id="eleventh-question" class="question-container hidden">
             <h3>Which city is recognized as the capital of the United States of America?</h3>
             <div class="question-header">
-                <img src="assets\images\united-states-flag.webp" alt="United States Flag" class="flag-icon">
+                <img src="assets/images/united-states-flag.webp" alt="United States Flag" class="flag-icon">
             </div>
             <ul>
-                <li><input type="checkbox" class="answer-checkbox" value="New York" data-correct="false">A. New York
+                <li><input type="checkbox" class="answer-checkbox" name="New York" data-correct="false">A. New York
                 </li>
-                <li><input type="checkbox" class="answer-checkbox" value="Los Angeles" data-correct="false">B. Los
+                <li><input type="checkbox" class="answer-checkbox" name="Los Angeles" data-correct="false">B. Los
                     Angeles</li>
-                <li><input type="checkbox" class="answer-checkbox" value="Chicago" data-correct="false">C. Chicago</li>
-                <li><input type="checkbox" class="answer-checkbox" value="Washington, D.C." data-correct="true">D.
+                <li><input type="checkbox" class="answer-checkbox" name="Chicago" data-correct="false">C. Chicago</li>
+                <li><input type="checkbox" class="answer-checkbox" name="Washington, D.C." data-correct="true">D.
                     Washington, D.C.</li>
             </ul>
         </div>
         <div id="twelfth-question" class="question-container hidden">
             <div class="question-header">
                 <h3>France capital city is?</h3>
-                <img src="assets\images\france-flag.webp" alt="France Flag" class="flag-icon">
+                <img src="assets/images/france-flag.webp" alt="France Flag" class="flag-icon">
             </div>
             <ul>
-                <li><input type="checkbox" class="answer-checkbox" value="Paris" data-correct="true">A. Paris</li>
-                <li><input type="checkbox" class="answer-checkbox" value="Marseille" data-correct="false">B. Marseille
+                <li><input type="checkbox" class="answer-checkbox" name="Paris" data-correct="true">A. Paris</li>
+                <li><input type="checkbox" class="answer-checkbox" name="Marseille" data-correct="false">B. Marseille
                 </li>
-                <li><input type="checkbox" class="answer-checkbox" value="Lyon" data-correct="false">C. Lyon</li>
-                <li><input type="checkbox" class="answer-checkbox" value="Toulouse" data-correct="false">D. Toulouse
+                <li><input type="checkbox" class="answer-checkbox" name="Lyon" data-correct="false">C. Lyon</li>
+                <li><input type="checkbox" class="answer-checkbox" name="Toulouse" data-correct="false">D. Toulouse
                 </li>
             </ul>
         </div>
         <!--End of questions-->
         <div>
             <p id="end-message" style="display: none;">
-                <strong>Congratulations! You've completed the quiz!
-                    View the correct answers, then proceed to the fun facts below about each country.</strong>
+                Congratulations! You've completed the quiz!
+                    View the correct answers, then proceed to the fun facts for each country.
             </p>
         </div>
 
@@ -244,7 +243,7 @@
         <hr>
 
         <!-- Fun Facts Section -->
-        <section id="fun-facts-section" class="hidden">
+        <section id="fun-facts-section" class="hidden reveal-answer">
             <h2>Guess the Country from the Fun Facts below! </h2>
             <ol id="fun-facts-list">
                 <li>This country is known for its beautiful beaches on the Atlantic Ocean and is home to the
@@ -299,17 +298,20 @@
                 </li>
                 <li>This country is famous for the Eiffel Tower and its delicious pastries.
                     <span class="hidden-answer"> <strong>France</strong></span>
-                    <button class="reveal-btn">Reveal Answer</button>
+                    <button class="reveal-btn" style="margin-bottom: 5rem">Reveal Answer</button>
             </ol>
         </section>
     </main>
 
-    <footer>
-        <p>&copy; 2025 Country Fun Facts Quiz. All rights reserved.</p>
-        <p>Created by Mariama Nyakateh Nyodeka</p>
-    </footer>
+    <div class="footer">
+        <footer>
+            <p>&copy; 2025 Country Fun Facts Quiz. All rights reserved.</p>
+            <p>Created by Mariama Nyakateh Nyodeka</p>
+        </footer>
+    </div>
 
     <script src="assets/js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.browser.js"></script>
 </body>
 
 

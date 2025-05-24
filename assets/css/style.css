@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 /* CSS Reset */
 * {
@@ -11,7 +11,10 @@
 html {
   scroll-behavior: smooth;
 }
+
 body {
+  width: 100vw;
+  height: 100%;
   font-family: "Poppins", sans-serif;
   background-color: white;
   color: black;
@@ -33,12 +36,12 @@ h2 {
   font-family: "Marriweather Sans", sans-serif;
 }
 h3 {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   margin-bottom: 20px;
   font-family: "Marriweather Sans", sans-serif;
 }
 p {
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   line-height: 1.5;
 }
 button {
@@ -55,31 +58,34 @@ button {
 }
 
 button:hover {
-    background-color: #0096c7;
+  background-color: #005f8a; /* Darker shade for hover effect */
 }
 
 /* Header */
 #quiz-title {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: white;
-    padding: 15px;
-    text-align: center;
-    font-weight: bold;
-    z-index: 1000;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Gives the heading a subtle separation effect from the rest of the page */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #0077b6;
+  color: white;
+  padding: 15px;
+  text-align: center;
+  font-weight: bold;
+  z-index: 1000;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Gives the heading a subtle separation effect from the rest of the page */
 }
 /* Add space below the fixed heading */
 body {
-    padding-top: 80px; /* Pushes all the content below the fixed heading so there's no overlapping with scrolling content */
+  padding-top: 80px; /* Pushes all the content below the fixed heading so there's no overlapping with scrolling content */
 }
 
 /* Toggle button */
 .dark-mode {
-  background-color: black;
-  color: white;
+  background-color: #000000;/* Dark background for dark mode (black) */
+  color: #FFFFFF; /* Light text for dark mode (white) */
+  color:  #FFFFFF;
+  border: none;
 }
 
 .light-mode {
@@ -93,36 +99,36 @@ body {
   padding: 20px;
   margin-top: 20px;
   margin-bottom: 20px;
-  width:fit-content;
-} 
+  width: fit-content;
+}
 
 /* Modal */
 .modal {
-    display: none;
-    position: fixed;
-    z-index: 2000;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+  position: fixed;
+  z-index: 2000;
+  left: 0;
+  top: 0;
+  width: 50%;
+  height: 50%;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .modal-content {
-    background-color: white;
-    padding: 20px;
-    margin: 15% auto;
-    width: 60%;
-    text-align: center;
-    border-radius: 8px;
+  background-color: white;
+  padding: 20px;
+  margin: 15% auto;
+  width: 60%;
+  text-align: center;
+  border-radius: 8px;
 }
-ul li{
+ul li {
   list-style-type: none;
 }
 .close {
-    float: right;
-    font-size: 24px;
-    cursor: pointer;
+  float: right;
+  font-size: 24px;
+  cursor: pointer;
 }
 
 /* Country capital city questions */
@@ -163,32 +169,30 @@ h2 {
 #fun-facts-section {
   font-size: 1.6rem; /* Increases font size */
   margin-top: 20px; /* Adds space above the fun facts section */
+  min-height: auto; /* Prevents unnecessary height expansion */
+  overflow: visible; /* Ensures content remains accessible */
 }
+
 #fun-facts-section li {
   margin-bottom: 10px; /* Adds space between list items */
   font-size: 1.5rem; /* Increases font size */
   line-height: 1.2; /* Increases line height for better readability */
 }
-
-ol li {
-  margin-bottom: 10px; /* Adds space between list items */
-  font-size: 1rem; /* Increases font size */
-  line-height: 1.5; /* Increases line height for better readability */
+.reveal-answer {
+  position: relative;
+  z-index: 10; /* Ensures it's above other elements */
+  margin-bottom: 20px; /* Adds space below */
 }
 
 /* Footer */
-footer {
+.footer {
   position: fixed;
   left: 0;
-  right: 0;
   bottom: 0;
-  width: 100vw;
+  width: 100%;
   background-color: #0077b6;
+  color: white;
   text-align: center;
-  color: white; 
-  font-size: 0.2rem;
-  padding: 20px 0;
-  margin-left: 0;
-  margin-right: 0;
+  margin-top: 1rem;
   z-index: 1500;
 }
