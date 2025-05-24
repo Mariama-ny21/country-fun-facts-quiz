@@ -72,9 +72,13 @@ The quiz was tested for the following:
 - Accessibility – Dark mode toggle and readable fonts for better user experience
 
 ### Screenshots
+![html-validator_index html](https://github.com/user-attachments/assets/9ca5fd57-02bf-48f6-9c1b-85017ce61388)
+![jigsaw-css-validator_style css](https://github.com/user-attachments/assets/8ced2687-4b61-4a70-bcdd-c331d6b192eb)
+![lighthouse-report-screenshot](https://github.com/user-attachments/assets/9881d772-a15c-4c95-a217-a74b933b935b)
 
 
 ## Deployment
+
 The deployed website can be viewed at: https://mariama-ny21.github.io/........
 
 
