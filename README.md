@@ -20,7 +20,7 @@
 
 ## Introduction
 
-Welcome to my **Country Quiz and Fun Facts,** an interactive quiz designed to test your knowledge of countries, their capital cities, and unique cultural facts. This quiz offers an engaging way to learn about different nations while having fun and a screenshot of the Quiz can be seen below. ![country-quiz-fun-facts-page-screenshot](https://github.com/user-attachments/assets/b80e5a64-a164-405d-90ec-b5361327f61e) Play the quiz here https://.........
+Welcome to my **Country Quiz and Fun Facts,** an interactive quiz designed to test your knowledge of countries, their capital cities, and unique cultural facts. This quiz offers an engaging way to learn about different nations while having fun and a screenshot of the Quiz can be seen below. ![country-quiz-fun-facts-page-screenshot](https://github.com/user-attachments/assets/b80e5a64-a164-405d-90ec-b5361327f61e) Play the quiz here https://mariama-ny21.github.io/country-fun-facts-quiz/
 
 ## Project Overview
 
@@ -109,9 +109,11 @@ W3C CSS Validation
 Lighthouse Performance Report
 ![lighthouse-report-screenshot](https://github.com/user-attachments/assets/9881d772-a15c-4c95-a217-a74b933b935b)
 
+
+
 ## Deployment
 
-The deployed website can be viewed at: https://mariama-ny21.github.io/........
+The deployed website can be viewed at: https://mariama-ny21.github.io/country-fun-facts-quiz/
 
 ## AI Assistance
 
