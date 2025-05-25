@@ -44,13 +44,17 @@ As a user, I want to...
 ### Colours
 | **Colours** | **Hex Code**  | **Usage** |
 |------------|--------------|------------------------------|
-| Blue       | #0077b6      | Header, Buttons, and Footer |
+| Blue       | #0077b6      | Header, Buttons, Footer, and Confetti |
 | Blue       | #005f8a      | Buttons hover effect (darker shade) |
 | White      | #FFFFFF      | Body, Modal, White background for light mode |
 | Black      | #000000      | Dark background for dark mode |
+| Light Pink | #ff477e      | Confetti |
+| Very Light Pink| #ff7096  | Confetti |
+|Soft Red Pink | #ff85a1 | Confetti |
+| Very Soft Red   | #fbb1bd | Confetti |
 -----
 
-The color scheme enhances readability while maintaining a visually appealing layout. The quiz features a clean, professional design with a toggle option for dark/light mode, ensuring accessibility and user preference. 
+The color scheme enhances readability while maintaining a visually appealing layout. The quiz features a clean, professional design with a toggle option for dark/light mode, ensuring accessibility and user preference. A celebratory confetti effect adds a lively touch at the end of the quiz, enhancing the user experience and making the completion feels rewarding. 
 
 
 ### Font
