@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Country Quiz and Fun Facts</title>
+    <title>Country Fun Facts Quiz</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <meta name="description"
         content="Test your knowledge of countries, their capital cities, and discover fun facts about each country with this engaging quiz.">
@@ -13,14 +13,15 @@
 </head>
 
 <body>
-    <h1 id="quiz-title">Country Quiz and Fun Facts!</h1>
+    <h1 id="quiz-title">Country Fun Facts Quiz!</h1>
+    <p class="tagline">Explore the world one question at a time!</p>
     <h2>Toggle Dark/Light Mode</h2>
     <p>Click the button below to toggle between dark and light mode.</p>
     <button onclick="myToggle()">Toggle Dark Mode</button>
-    <p>Test your knowledge of countries, their capital cities, and discover fun facts about each country.</p>
+    <p style="margin-top:10px;">Test your knowledge of countries, their capital cities, and discover fun facts about each country.</p>
     <main>
         <div id="quiz-container" class="hidden">
-            <h3 id="question">Click the button below to start the quiz!</h3>
+            <h3 id="question" style="margin-top:15px;">Click the button below to start the quiz!</h3>
             <ul id="options"></ul>
             <button id="start-quiz">Start Quiz</button>
             <button id="next-button" class="hidden">Next Question</button>
@@ -28,7 +29,7 @@
         </div>
 
         <div id="result-container" class="hidden score-area">
-            <h2>Your Total Score: <span id="total-score"></span></h2>
+            <h3>Your Total Score: <span id="total-score"></span></h3>
             <p class="scores">Correct Answers <span id="correct-score">0</span></p>
             <p class="scores">Incorrect Answers <span id="incorrect-score">0</span></p>
         </div>

@@ -79,6 +79,13 @@ button:hover {
 body {
   padding-top: 80px; /* Pushes all the content below the fixed heading so there's no overlapping with scrolling content */
 }
+/* Centering the tagline */
+.tagline {
+    text-align: center; /* Centers the text */
+    display: block; /* Ensures it behaves properly */
+    font-size: 1.8rem; /* Adjusts the font size for better visibility */
+    color:#0077b6; /* Matches the color of the header */
+}
 
 /* Toggle button */
 .dark-mode {
