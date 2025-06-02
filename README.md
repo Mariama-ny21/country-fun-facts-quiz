@@ -2,28 +2,38 @@
 
 ## Table of Content
 
-1. Introduction
-2. Project Overview
-3. UX/UI Design
+[1. Introduction](#1-introduction)
+
+[2. Project Overview](#2-project-overview)
+
+[3. UX/UI Design](#3-ux--ui-design)
    - User Stories
    - Colours
    - Font
    - Imagery
-4. Features
-5. Usage Instructions
-6. Technologies and Languages Used
-7. Tools Used
-8. Testing
-9. Deployment
-10. AI Assistance
-11. Challenges and Learnings
 
-## Introduction
+[4. Features](#4-features)
+
+[5. Usage Instructions](#5-usage-instructions)
+
+[6. Technologies and Languages Used](#6-technologies-and-languages-used)
+
+[7. Tools Used](#7-tools-used)
+
+[8. Testing](#8-testing)
+
+[9. Deployment](#9-deployment)
+
+[10. AI Assistance](#10-ai-assistance)
+
+[11. Challenges and Learnings](#11-challenges-and-learnings)
+
+## 1. Introduction
 
 Welcome to my **Country Quiz and Fun Facts,** an interactive quiz designed to test your knowledge of countries, their capital cities, and unique cultural facts. This quiz offers an engaging way to learn about different nations while having fun and a screenshot of the Quiz can be seen below. ![country-quiz-fun-facts-page-screenshot](https://github.com/user-attachments/assets/db55f806-fddb-432a-bc22-c318ccfd6093)
 Play the quiz here https://mariama-ny21.github.io/country-fun-facts-quiz/
 
-## Project Overview
+## 2. Project Overview
 
 Key Objectives:
 
@@ -32,7 +42,7 @@ Key Objectives:
 - Generate Lighthouse report
 - Deploy the project using Git and GitHub Pages
 
-## UX / UI Design
+## 3. UX / UI Design
 
 ### User Stories
 As a user, I want to...
@@ -66,7 +76,7 @@ The project uses Poppins as the primary font for a modern, clean look. A complem
 
 Minimalistic design with clear buttons and country flags. The site's structured layouts ensures a smooth user experience. The quiz avoids clutter, focusing on interactive elements that enhance engagement.
 
-## Features
+## 4. Features
 
 - Dark/Light Mode Toggle – Allows users to switch between dark and light mode 
 - Multiple-Choice Questions – Engaging format with instant result
@@ -76,7 +86,7 @@ Minimalistic design with clear buttons and country flags. The site's structured 
 - Responsive Design – Works smoothly on desktop and mobile
 - Confetti animation - Confetti effect triggers at the end of quiz
 
-## Usage Instructions
+## 5. Usage Instructions
 
 1. Click Start Quiz to begin.
 2. Answer each question, then click Next Question to proceed.
@@ -86,19 +96,19 @@ Minimalistic design with clear buttons and country flags. The site's structured 
 6. Use the Restart Quiz button to play again.
 7. Toggle Dark Mode for a customized experience.
 
-## Technologies and Languages Used
+## 6. Technologies and Languages Used
 
 - HTML & CSS – Structure and styling
 - JavaScript – Interactive functionalities
 - Google Fonts – Sleek typography
 
-## Tools Used
+## 7. Tools Used
 
 - Visual Studio Code – Code editing
 - GitHub – Version control
 - Google Fonts – Typography enhancement
 
-## Testing
+## 8. Testing
 
 The quiz was tested for the following:
 
@@ -106,7 +116,7 @@ The quiz was tested for the following:
 - Responsiveness – Optimized for desktop and mobile devices
 - Accessibility – Dark mode toggle and readable fonts for better user experience
 
-### Screenshots
+Screenshots:
 W3C Validation
 ![html-validator_index html](https://github.com/user-attachments/assets/9ca5fd57-02bf-48f6-9c1b-85017ce61388)
 W3C CSS Validation
@@ -115,12 +125,11 @@ Lighthouse Performance Report
 ![lighthouse-report-screenshot](https://github.com/user-attachments/assets/9881d772-a15c-4c95-a217-a74b933b935b)
 
 
-
-## Deployment
+## 9. Deployment
 
 The deployed website can be viewed at: https://mariama-ny21.github.io/country-fun-facts-quiz/
 
-## AI Assistance
+## 10. AI Assistance
 
 Microsoft Copilot assisted in:
 
@@ -129,7 +138,7 @@ Microsoft Copilot assisted in:
 - Optimizing code structure by removing duplicates and enhancing efficiency
 - Refining README for documentation clarity
 
-## Challenges and Learnings
+## 11. Challenges and Learnings
 
 Throughout development, key learnings included:
 
