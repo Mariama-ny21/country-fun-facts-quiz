@@ -5,38 +5,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Country Fun Facts Quiz</title>
-    <link rel="stylesheet" href="assets/css/style.css">
     <meta name="description"
         content="Test your knowledge of countries, their capital cities, and discover fun facts about each country with this engaging quiz.">
     <meta name="keywords" content="Quiz, countries, capital cities, fun facts">
     <meta name="author" content="Mariama Nyakateh Nyodeka">
+
     <!-- globe Favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon/favicon-16x16.png">
+    <!--CSS-->
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
-    <h1 id="quiz-title">Country Fun Facts Quiz!</h1>
+    <h1 id="quiz-title">
+        Country Fun Facts Quiz!
+        <button id="instructions-btn" style="margin-left: 1rem; font-size: 1rem; padding: 8px 16px;">
+            <i class="fa-solid fa-circle-info" style="margin-right: 6px;" aria-hidden="true"></i>
+            Instructions
+        </button>
+    </h1>
+    <div id="instructions-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="close-instructions">&times;</span>
+            <h2>Instructions</h2>
+            <p>
+                Test your knowledge of countries, their capital cities, and discover fun facts about each country.</p>
+            <p>Click the "Start Quiz" button to begin. You will be presented with a series of questions about
+                countries and their capital cities. Select the answer you think is correct. Only one answer can be
+                selected per question. </p>
+            <p>At the end, view your total score of correct answers. You can then explore fun facts about each country.
+            </p>
+            </p>
+        </div>
+    </div>
     <p class="tagline">Explore the world one question at a time!</p>
     <h2>Toggle Dark/Light Mode</h2>
     <p>Click the button below to toggle between dark and light mode.</p>
     <button onclick="myToggle()">Toggle Dark Mode</button>
-    <p style="margin-top:10px;">Test your knowledge of countries, their capital cities, and discover fun facts about
-        each country.</p>
     <main>
-        <div id="quiz-container" class="hidden">
-            <h3 id="question" style="margin-top:15px;">Click the button below to start the quiz!</h3>
-            <ul id="options"></ul>
-            <button id="start-quiz">Start Quiz</button>
-            <button id="next-button" class="hidden">Next Question</button>
-            <button id="restart-quiz">Restart Quiz</button>
-        </div>
+        <div class="quiz-flex-wrapper">
+            <div id="quiz-container" class="hidden">
+                <h3 id="question" style="margin-top:15px;">Click the button below to start the quiz!</h3>
+                <ul id="options"></ul>
+                <button id="start-quiz">Start Quiz</button>
+                <button id="next-button" class="hidden">Next Question</button>
+                <button id="restart-quiz">Restart Quiz</button>
+            </div>
 
-        <div id="result-container" class="hidden score-area">
-            <h3>Your Total Score: <span id="total-score"></span></h3>
-            <p class="scores">Correct Answers <span id="correct-score">0</span></p>
-            <p class="scores">Incorrect Answers <span id="incorrect-score">0</span></p>
+
+            <div id="result-container" class="hidden score-area">
+                <h3>Your Total Score: <span id="total-score"></span></h3>
+                <p class="scores">Correct Answers <span id="correct-score">0</span></p>
+                <p class="scores">Incorrect Answers <span id="incorrect-score">0</span></p>
+            </div>
         </div>
 
         <!-- First question displayed before quiz starts -->
@@ -224,7 +247,7 @@
         <!-- Modal for Correct Answers -->
         <div id="correct-answers-modal" class="modal">
             <div class="modal-content">
-                <span class="close">&times;</span>
+                <span class="close" id="close-correct-answers">&times;</span>
                 <h2>All Correct Answers</h2>
                 <ul>
                     <li><strong>Sierra Leone</strong> - Freetown</li>
@@ -314,9 +337,11 @@
             <p>Created by Mariama Nyakateh Nyodeka</p>
         </footer>
     </div>
-
+    <!--JavaScript-->
     <script src="assets/js/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.browser.js"></script>
+    <!--Font Awesome link-->
+    <script src="https://kit.fontawesome.com/ddba35b207.js" crossorigin="anonymous"></script>
 </body>
 
 
