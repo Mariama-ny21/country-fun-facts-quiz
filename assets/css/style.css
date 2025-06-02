@@ -3,7 +3,7 @@
 :root {
   --primary-blue: #0077b6;
   --primary-blue-dark: #005f8a;
-  --secondary-skyblue: #87ceeb; 
+  --secondary-skyblue: #87ceeb;
   --white: #ffffff;
   --black: #000000;
 }
@@ -47,7 +47,9 @@ h3 {
   font-size: 1.6rem;
   margin-bottom: 20px;
 }
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   font-family: "Marriweather Sans", sans-serif;
 }
 p {
@@ -91,10 +93,10 @@ body {
 }
 /* Centering the tagline */
 .tagline {
-    text-align: center; /* Centers the text */
-    display: block; /* Ensures it behaves properly */
-    font-size: 1.8rem; /* Adjusts the font size for better visibility */
-    color: var(--primary-blue); /* Matches the color of the header */
+  text-align: center; /* Centers the text */
+  display: block; /* Ensures it behaves properly */
+  font-size: 1.8rem; /* Adjusts the font size for better visibility */
+  color: var(--primary-blue); /* Matches the color of the header */
 }
 
 /* Toggle button */
@@ -153,6 +155,7 @@ body {
 
 .modal-content {
   background-color: var(--white);
+  color: var(--black); /* Add this line */
   padding: 20px;
   margin: 15% auto;
   width: 60%;
@@ -195,7 +198,7 @@ h2 {
 }
 
 .flag-icon {
-   width: 40px;
+  width: 40px;
   height: auto;
   vertical-align: middle;
   margin-right: 8px;
