@@ -5,9 +5,9 @@
   --secondary-skyblue: #87ceeb;
   --white: #ffffff;
   --black: #000000;
-  --slider-dark-bg: #222f3e;
+  --slider-dark-bg: #000000;
   --light-icon-color: #f1c40f;
-  --dark-icon-color: #222f3e;
+  --dark-icon-color: #000000;
 }
 
 /* CSS Reset */
@@ -121,7 +121,7 @@ body {
   right: 0;
   bottom: 0;
   background-color: #ccc;
-  transition: 0.4s;
+  transition: background-color 0.4s;
   border-radius: 32px;
   display: flex;
   align-items: center;
@@ -145,14 +145,23 @@ body {
   width: 24px;
   left: 4px;
   bottom: 4px;
-  background-color: white;
-  transition: 0.4s;
+  background-color: var(--white);
+  transition: transform 0.4s;
   border-radius: 50%;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
 }
 .switch input:checked + .slider:before {
   transform: translateX(28px);
 }
+body {
+  background-color: var(--white);
+  color: var(--black);
+}
 
+.darkModeToggle {
+  background-color: #000000 !important;
+  color: #fff !important;
+}
 /* Quiz container */
 /* Flex wrapper for quiz and result containers */
 .quiz-flex-wrapper {

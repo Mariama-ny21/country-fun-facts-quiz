@@ -1,7 +1,8 @@
 // Function to toggle dark mode
 function myToggle() {
-    document.body.classList.toggle("dark-mode");
+    document.body.classList.toggle("darkModeToggle");
 }
+
 
 document.addEventListener("DOMContentLoaded", function () {
     // Instructions modal logic
