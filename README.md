@@ -30,7 +30,7 @@
 
 ## 📌 Introduction
 
-Welcome to my **Country Quiz and Fun Facts,** an interactive quiz designed to test your knowledge of countries, their capital cities, and unique cultural facts. This quiz offers an engaging way to learn about different nations while having fun and a screenshot of the Quiz can be seen below.  ![country-quiz-fun-facts-page-screenshot](https://github.com/user-attachments/assets/c3be480a-57ab-4acc-a7a7-c8660913830a)
+Welcome to my **Country Quiz and Fun Facts,** an interactive quiz designed to test your knowledge of countries, their capital cities, and unique cultural facts. This quiz offers an engaging way to learn about different nations while having fun and a screenshot of the Quiz can be seen below.  ![country-quiz-fun-facts-page-screenshot](https://github.com/user-attachments/assets/17d51771-1050-4ee3-b7dc-5ffdc4de36c2)
 
 Play the quiz here [Live Demo](https://mariama-ny21.github.io/country-fun-facts-quiz)
 
@@ -117,12 +117,16 @@ The quiz was tested for the following:
 - Accessibility – Dark mode toggle and readable fonts for better user experience
 
 Screenshots:
+
+Responsive
+![responsive-screenshot](https://github.com/user-attachments/assets/1e970ddd-7e8a-4b6e-9166-3eec02e0c663)
 W3C Validation
-![html-validator_index html](https://github.com/user-attachments/assets/9ca5fd57-02bf-48f6-9c1b-85017ce61388)
+![html-validator_index html](https://github.com/user-attachments/assets/ba112226-334d-4943-84bd-ba69c57fe065)
 W3C CSS Validation
 ![jigsaw-css-validator_style css](https://github.com/user-attachments/assets/8ced2687-4b61-4a70-bcdd-c331d6b192eb)
 Lighthouse Performance Report
-![lighthouse-report-screenshot](https://github.com/user-attachments/assets/9881d772-a15c-4c95-a217-a74b933b935b)
+![lighthouse-report-screenshot](https://github.com/user-attachments/assets/4927ba93-5b3f-4f8e-90d0-d4f796e65a66)
+
 
 ## 🚀 Deployment
 
