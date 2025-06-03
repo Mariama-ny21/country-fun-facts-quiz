@@ -108,6 +108,7 @@ The quiz was tested for the following:
 - Accessibility – Dark mode toggle and readable fonts for better user experience
 
 Screenshots:
+
 Responsive
 ![responsive-screenshot](https://github.com/user-attachments/assets/1e970ddd-7e8a-4b6e-9166-3eec02e0c663)
 W3C Validation
