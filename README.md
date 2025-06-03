@@ -21,7 +21,7 @@
 
 ## 🏁 1. Introduction
 
-Welcome to my **Country Quiz and Fun Facts,** an interactive quiz designed to test your knowledge of countries, their capital cities, and unique cultural facts. This quiz offers an engaging way to learn about different nations while having fun and a screenshot of the Quiz can be seen below.  ![country-quiz-fun-facts-page-screenshot](https://github.com/user-attachments/assets/c3be480a-57ab-4acc-a7a7-c8660913830a)
+Welcome to my **Country Quiz and Fun Facts,** an interactive quiz designed to test your knowledge of countries, their capital cities, and unique cultural facts. This quiz offers an engaging way to learn about different nations while having fun and a screenshot of the Quiz can be seen below.  ![country-quiz-fun-facts-page-screenshot](https://github.com/user-attachments/assets/17d51771-1050-4ee3-b7dc-5ffdc4de36c2)
 
 Play the quiz here [Live Demo](https://mariama-ny21.github.io/country-fun-facts-quiz)
 
