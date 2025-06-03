@@ -34,7 +34,7 @@ Welcome to my **Country Quiz and Fun Facts,** an interactive quiz designed to te
 
 Play the quiz here [Live Demo](https://mariama-ny21.github.io/country-fun-facts-quiz)
 
-## 🌍 Project Overview {#project-overview}
+## 🌍 Project Overview
 
 Key Objectives:
 
