@@ -1,4 +1,4 @@
-## Country Quiz and Fun Facts
+## Country Fun Facts Quiz
 
 ## Table of Content
 - 🏁 [1. Introduction](#1-introduction)
