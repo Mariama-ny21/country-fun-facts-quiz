@@ -1,31 +1,40 @@
 ## Country Fun Facts Quiz
 
-## Table of Content
-- 🏁 [1. Introduction](#1-introduction)
-- 🗺️ [2. Project Overview](#2-project-overview)
-- 🎨 [3. UX/UI Design](#3-ux--ui-design)
-   - 👤 User Stories
-   - 🎨 Colours
-   - 🅰️ Font
-   - 🖼️ Imagery
-- ✨ [4. Features](#4-features)
-- 📝 [5. Usage Instructions](#5-usage-instructions)
-- 💻 [6. Technologies and Languages Used](#6-technologies-and-languages-used)
-- 🛠️ [7. Tools Used](#7-tools-used)
-- 🧪 [8. Testing](#8-testing)
-- 🚀 [9. Deployment](#9-deployment)
-- 🤖 [10. AI Assistance](#10-ai-assistance)
-- 📚 [11. Challenges and Learnings](#11-challenges-and-learnings)
+## Table of Contents
 
----
+📌 [Introduction](#introduction)  
 
-## 🏁 1. Introduction
+🌍 [Project Overview](#project-overview)  
+
+🎨 [UX/UI Design](#uxui-design)  
+   - 🧑‍💻 [User Stories](#user-stories)  
+   - 🎨 [Colours](#colours)  
+   - 🔤 [Font](#font)  
+   - 🖼️ [Imagery](#imagery)  
+
+✨ [Features](#features)  
+
+📜 [Usage Instructions](#usage-instructions)  
+
+💻 [Technologies and Languages Used](#technologies-and-languages-used)  
+
+🧪 [Testing](#testing)  
+
+🚀 [Deployment](#deployment)  
+
+🤖 [AI Assistance](#ai-assistance)  
+
+📚 [Challenges and Learnings](#challenges-and-learnings)  
+
+
+
+## 📌 Introduction
 
 Welcome to my **Country Quiz and Fun Facts,** an interactive quiz designed to test your knowledge of countries, their capital cities, and unique cultural facts. This quiz offers an engaging way to learn about different nations while having fun and a screenshot of the Quiz can be seen below.  ![country-quiz-fun-facts-page-screenshot](https://github.com/user-attachments/assets/c3be480a-57ab-4acc-a7a7-c8660913830a)
 
 Play the quiz here [Live Demo](https://mariama-ny21.github.io/country-fun-facts-quiz)
 
-## 🗺️ 2. Project Overview
+## 🌍 Project Overview {#project-overview}
 
 Key Objectives:
 
@@ -34,9 +43,9 @@ Key Objectives:
 - Generate Lighthouse report
 - Deploy the project using Git and GitHub Pages
 
-## 🎨 3. UX / UI Design
+## 🎨 UX/UI Design
 
-### 👤 User Stories
+### 🧑‍💻 User Stories
 As a user, I want to...
 - Answer multiple-choice questions about country capitals so that I can test my knowledge
 - See all the correct answers at the end of the quiz so that I can learn from my mistakes
@@ -59,7 +68,7 @@ As a user, I want to...
 
 The color scheme enhances readability while maintaining a visually appealing layout. The quiz features a clean, professional design with a toggle option for dark/light mode, ensuring accessibility and user preference. A celebratory confetti effect adds a lively touch at the end of the quiz, enhancing the user experience and making the completion feels rewarding. 
 
-### 🅰️ Font
+### 🔤 Font
 
 The project uses Poppins as the primary font for a modern, clean look. A complementary font, Merriweather Sans, adds contrast for headings and key sections, ensuring readability and aesthetic balance.
 
@@ -67,7 +76,7 @@ The project uses Poppins as the primary font for a modern, clean look. A complem
 
 Minimalistic design with clear buttons and country flags. The site's structured layouts ensures a smooth user experience. The quiz avoids clutter, focusing on interactive elements that enhance engagement.
 
-## ✨ 4. Features
+## ✨ Features
 
 - Dark/Light Mode Toggle – Allows users to switch between dark and light mode 
 - Multiple-Choice Questions – Engaging format with instant result
@@ -77,7 +86,7 @@ Minimalistic design with clear buttons and country flags. The site's structured 
 - Responsive Design – Works smoothly on desktop and mobile
 - Confetti animation - Confetti effect triggers at the end of quiz
 
-## 📝 5. Usage Instructions
+## 📜 Usage Instructions
 
 1. Click Start Quiz to begin.
 2. Answer each question, then click Next Question to proceed.
@@ -87,19 +96,19 @@ Minimalistic design with clear buttons and country flags. The site's structured 
 6. Use the Restart Quiz button to play again.
 7. Toggle Dark Mode for a customized experience.
 
-## 💻 6. Technologies and Languages Used
+## 💻 Technologies and Languages Used
 
 - HTML & CSS – Structure and styling
 - JavaScript – Interactive functionalities
 - Google Fonts – Sleek typography
 
-## 🛠️ 7. Tools Used
+## 🛠️ Tools Used
 
 - Visual Studio Code – Code editing
 - GitHub – Version control
 - Google Fonts – Typography enhancement
 
-## 🧪 8. Testing
+## 🧪 Testing
 
 The quiz was tested for the following:
 
@@ -115,11 +124,11 @@ W3C CSS Validation
 Lighthouse Performance Report
 ![lighthouse-report-screenshot](https://github.com/user-attachments/assets/9881d772-a15c-4c95-a217-a74b933b935b)
 
-## 🚀 9. Deployment
+## 🚀 Deployment
 
 The deployed website can be viewed at: https://mariama-ny21.github.io/country-fun-facts-quiz/
 
-## 🤖 10. AI Assistance
+## 🤖 AI Assistance
 
 Microsoft Copilot assisted in:
 
@@ -128,7 +137,7 @@ Microsoft Copilot assisted in:
 - Optimizing code structure by removing duplicates and enhancing efficiency
 - Refining README for documentation clarity
 
-## 📚 11. Challenges and Learnings
+## 📚 Challenges and Learnings
 
 Throughout development, key learnings included:
 
