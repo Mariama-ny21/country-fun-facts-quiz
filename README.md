@@ -109,11 +109,12 @@ The quiz was tested for the following:
 
 Screenshots:
 W3C Validation
-![html-validator_index html](https://github.com/user-attachments/assets/9ca5fd57-02bf-48f6-9c1b-85017ce61388)
+![html-validator_index html](https://github.com/user-attachments/assets/ba112226-334d-4943-84bd-ba69c57fe065)
 W3C CSS Validation
 ![jigsaw-css-validator_style css](https://github.com/user-attachments/assets/8ced2687-4b61-4a70-bcdd-c331d6b192eb)
 Lighthouse Performance Report
-![lighthouse-report-screenshot](https://github.com/user-attachments/assets/9881d772-a15c-4c95-a217-a74b933b935b)
+![lighthouse-report-screenshot](https://github.com/user-attachments/assets/4927ba93-5b3f-4f8e-90d0-d4f796e65a66)
+
 
 ## 🚀 9. Deployment
 
