@@ -1,11 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-
 :root {
   --primary-blue: #0077b6;
   --primary-blue-dark: #005f8a;
   --secondary-skyblue: #87ceeb;
   --white: #ffffff;
   --black: #000000;
+  --slider-dark-bg: #222f3e;
+  --light-icon-color: #f1c40f;
+  --dark-icon-color: #222f3e;
 }
 
 /* CSS Reset */
@@ -98,17 +100,57 @@ body {
   font-size: 1.8rem; /* Adjusts the font size for better visibility */
   color: var(--primary-blue); /* Matches the color of the header */
 }
-
-/* Toggle button */
-.dark-mode {
-  background-color: var(--black);
-  color: var(--white);
-  border: none;
+/* Dark and Light Mode Switch */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 32px;
+  vertical-align: middle;
 }
-
-.light-mode {
-  background-color: var(--white);
-  color: var(--black);
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+  border-radius: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px;
+  font-size: 1.2rem;
+}
+.slider .light-icon {
+  color: var(--light-icon-color);
+}
+.slider .dark-icon {
+  color: var(--dark-icon-color);
+}
+.switch input:checked + .slider {
+  background-color: var(--slider-dark-bg);
+}
+.slider:before {
+  content: "";
+  position: absolute;
+  height: 24px;
+  width: 24px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+.switch input:checked + .slider:before {
+  transform: translateX(28px);
 }
 
 /* Quiz container */
